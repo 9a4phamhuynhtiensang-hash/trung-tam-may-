@@ -1,0 +1,26 @@
+/* Thiết lập chung */
+body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+header { background: #2c3e50; color: white; text-align: center; padding: 20px; }
+footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+
+/* Menu nằm ngang dùng Flexbox [cite: 57, 58, 59] */
+nav ul { 
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+    gap: 20px; 
+    background-color: #e67e22; 
+    padding: 10px; 
+    margin: 0;
+}
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Chia 3 cột cho Trang chủ [cite: 62, 63] */
+.container-3-cot { display: flex; gap: 20px; padding: 20px; }
+.cot-noi-dung { flex: 1; padding: 15px; border: 1px solid #ccc; text-align: center; }
+.cot-noi-dung img { width: 100%; height: auto; border-radius: 5px; }
+
+/* Bố cục Sidebar cho trang con [cite: 66, 67] */
+.main-body { display: flex; padding: 20px; }
+.sidebar-trai { width: 25%; background-color: #f1f1f1; padding: 15px; }
+.noi-dung-phai { width: 75%; padding-left: 20px; }
